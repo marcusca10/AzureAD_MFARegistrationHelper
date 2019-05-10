@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>It's time to protect your account!</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Remove the following line if not using Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.0/js/msal.js"></script>    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+        <div  class="card mx-auto">
+            <div class="card-body">
+                <img src="logo.jpg"  alt="Company Logo">
+                <h5 id="pageTitle" class="card-title"></h5>
+                <h6 id="userInfo" class="card-subtitle mb-2 text-muted"></h6>
+                <br/>
+                
+                <p id="pageMessage"></p>
+                <br/>
+                
+                <!-- 
+                    Modern browsers do not allow closing windows via script!
+                    To enable the close button, remove the style attribute.
+                    style="display: none;" 
+                -->
+                <button id="close" class="btn btn-secondary btn-block" onclick="closeBrowser()">Later</button>
+                <button id="signIn" class="btn btn-primary btn-block" onclick="signIn()">Sign In</button>
+            </div>
+            <div class="card-footer text-muted">
+                    Azure Active Directory
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
