@@ -7,8 +7,8 @@ var thankyouMessage = "Thank you for registering.";
 //
 var msalConfig = {
     auth: {
-        clientId: "93aa7f35-ef71-4f10-95f8-60c7450af783", //Enter_the_Application_Id_here
-        authority: "https://login.microsoftonline.com/5453406a-87cf-4d32-8167-e5959ba2df55" //https://login.microsoftonline.com/Enter_the_Tenant_Info_Here
+        clientId: "Enter_the_Application_Id_here", 
+        authority: "https://login.microsoftonline.com/Enter_the_Tenant_Info_Here"
     },
     cache: {
         cacheLocation: "localStorage",
